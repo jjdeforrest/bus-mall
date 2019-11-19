@@ -1,0 +1,30 @@
+body {
+  width: 960px;
+  margin: 0 auto;
+  /* background: #7395ae; */
+  background: #557a95;
+ }
+ h1, h3 {
+  text-align: center;
+ }
+ h1 {
+  font-size: 4em;
+  margin: 50px;
+  color: white;
+ }
+ h3{
+  font-size: 2em;
+  margin-bottom: 50px;
+  color: white;
+ }
+ #main-banner {
+  text-align: center;
+  display: inline-block;
+ }
+ 
+ 
+ 
+ 
+ 
+ Message Daesy Stephens
+ 
