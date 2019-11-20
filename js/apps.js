@@ -126,6 +126,21 @@ function clickedItem(event) {
     console.log("stop");
     imageSectionElem.removeEventListener('click', clickedItem);
     makeChart();
+    var storingData = function() {
+      var getVotes;
+      if (count === 25) {
+        JSON.stringify(Pictures.allPictures);
+        localStorage.setItem('Pictures.allPictures', JSON.stringify(Pictures.allPictures));
+        getVotes = JSON.parse(localStorage.getItem(Pictures.allPictures));
+        return getVotes;
+      }
+    };
+    
+    storingData();
+
+
+
+
   }
 }
 // console.log('this.timeShown', this.timeShown);
@@ -189,4 +204,16 @@ function makeChart(){
     }
   });
 }
+
+// var storingData = function() {
+//   var getVotes;
+//   if (count === 25) {
+//     JSON.stringify(Pictures.allPictures);
+//     localStorage.setItem('Pictures.allPictures', JSON.stringify(Pictures.allPictures));
+//     getVotes = JSON.parse(localStorage.getItem(Pictures.allPictures));
+//     return getVotes;
+//   }
+// };
+
+// storingData();
 
